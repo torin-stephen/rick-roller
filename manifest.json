@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Rick Roller",
+    "version": "1.8.2",
+    "description": "Redirects to rick roll",
+    "content_scripts": [{
+      "matches": ["*://www.youtube.com/watch*", "*://www.youtube.co.uk/watch*"],
+      "exclude_matches": ["*://www.youtube.com/*dQw4w9WgXcQ", "*://www.youtube.co.uk/*dQw4w9WgXcQ"],
+      "js": ["./js/content.js"]
+    }],
+    "permissions": ["activeTab"],
+    "icons": {
+      "128": "./icons/128_128.png",
+      "48": "./icons/48_48.png",
+      "16": "./icons/16_16.png"
+    },
+    "browser_action": {
+      "default_title": "Rick Roller"
+    }
+  }
+  
